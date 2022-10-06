@@ -1,0 +1,76 @@
+#!/bin/bash
+#Parte 1 - Criar um diretorio unix_tests_search, acessar o diretorio e baixar uma list de nome Countrie
+
+mkdir unix_teste_search
+cd unix_test_search
+curl -o countries.txt
+
+
+#Parte 2 -  Mostrar o conteudo do arquivo countries.txt
+
+cat countries.txt
+
+#Parte 3 - Exibir conteudo do arquivo countries.txt em paginas
+
+less countries.txt
+
+
+#Parte 4 - Busca a palavra Zambia no arquivo countries.txt
+
+grep 'Zambia' countries.txt
+
+
+#Parte 5 - Busca pela palavra Brazil no arquivo countries.txt
+
+grep 'Brazil' countries.txt
+
+
+#Parte 6 - Busca pela palavra brazil no arquivo countries.txt
+
+grep -i 'brazil' countries.txt
+
+
+#Parte 7 - Criar um arquivo phrases.txt e adicionar algumas palavras aleatorias.
+
+#Parte 8 - Pesquisar as frases que nao tem a palavra fox
+
+grep -v 'fox' phrases.txt
+
+
+#Parte 9 - Retorna a quantidade de palavras no arquivo phrases.txt
+
+wc -w phrases.txt
+
+
+#Parte 10 - Retorna a quantidade de linhas no arquivo phrases.txt
+
+wc -l phrases.txt
+
+
+#Parte 11 - Cria dois arquivos empty - um com extensao tbt e outro pdf
+
+touch empty.tbt empty.pdf
+
+
+#Parte 12 - lista os arquivos do diretorio atual (unix_tests_search)
+
+ls
+
+
+#Parte 13 - Listar todos os arquivos txt
+
+ls *.txt
+
+
+#Parte 14 - Listar todos os arquivos txt ou tbt
+
+ls *.txt *.pdf
+
+
+#Parte 15 - Acesso o manual do Comando ls
+
+man ls
+
+
+
+

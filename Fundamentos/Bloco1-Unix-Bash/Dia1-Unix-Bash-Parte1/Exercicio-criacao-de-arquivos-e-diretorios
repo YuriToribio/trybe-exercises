@@ -1,0 +1,83 @@
+#!/bin/bash
+#Parte 1 - Criar um diretório Unix_test e entrar nesse diretório
+
+mkdir unix_tests
+cd unix_tests
+
+
+#Parte 2 - Criar um arquivo de texto com nome Trybe
+
+touch trybe.txt
+
+
+#Parte 3 - Copiar o conteúdo do arquivo trybe.txt para trybe_backup.txt
+
+cp trybe.txt trybe_backup.txt
+
+
+#Parte 4 - Renomear o arquivo trybe 
+
+mv trybe.txt trybe1.txt
+
+
+#Parte 5 - Criar um diretório de nome backup
+
+mkdir backup
+
+
+#Parte 6 - Mover o arquivo trybe_backup para o diretório backup 
+
+mv trybe_backup backup
+
+
+#Parte 7 - Criar um novo diretório com nome backup2
+
+mkdir backup2
+
+
+#Parte 8 - Mover o arquivo trybe_bacup.txt para o diretório backup2
+
+mv backup/trybe_backup.txt backup2
+
+
+#Parte 9 - Remove o diretório backup
+
+rmdir  backup
+
+
+#Parte 10 - Renomeia o diretório backup2 para backup
+
+mv backup2 backup
+
+
+#Parte 11 - Mostra o caminho do diretório atual e lista os arquivos no diretório atual
+
+pwd
+ls
+
+
+#Parte 12 - Remove a basta backup (mesmo o diretório não estando vazio)
+
+rm -rf backup
+
+
+#Parte 13 - Limpa o terminal (Poderia ser um Ctrl+l)	  
+
+clear
+
+#Parte 14 - Criar um arquivo skills.txt
+
+#Parte 15
+
+head -5 skills.txt
+
+
+#Parte 16
+
+tail -4 skills.txt
+
+
+#Parte 17 - Apagar todos os arquivos com extensão .txt
+
+rm *.txt
+
