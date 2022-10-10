@@ -1,0 +1,99 @@
+
+#Parte 1 - Crie a pasta unix_tests_skills e navegue até ela. 
+
+mkdir unix_tests_skills
+cd unix_tests_skills
+
+
+#Parte 2 - Crie um arquivo texto pelo terminal com o nome skills2.txt e adicione os valores Internet, Unix e Bash, um em cada linha. 
+
+touch skills2.txt
+cat > skills2.txt
+
+Internet
+Unix
+Bash
+
+#(Ctrl+d)
+
+
+#Parte 3 - Adicione mais 5 itens à sua lista de skills e depois imprima a lista ordenada no terminal.
+
+cat >> skills2.txt
+
+Kernel
+Shell
+Linux
+Ubuntu
+Arch-Linux
+
+#(Ctrl+d)
+
+cat skills2.txt | sort
+
+
+#Parte 4 - Conte quantas linhas tem o arquivo
+
+wc -l skills2.txt
+
+
+
+#Parte 5 - Crie um arquivo chamado top_skills.txt usando o skills2.txt, contendo as 3 primeiras skills em ordem alfabética. 
+
+head -3 skills2.txt | sort > top_skills.txt
+
+
+#Parte 6 - Crie um novo arquivo chamado phrases2.txt pelo terminal e adicione algumas frases de sua escolha. 
+
+touch phrases2.txt
+cat > phrases2.txt
+
+Pesquisar sobre Kernel do linux
+Imprimir  um arquivo com os principais comandos do linux
+Baixar a documentação do linux ubuntu 20.04
+Ler parte da documentação do git e do github
+Adiantar os exercicios da parte de gir e github
+Pesquisar como que conecta o git e github com o Vs code
+
+#(Ctrl + d)
+
+
+#Parte 7 - Conte o número de linhas que cotêm as letras br.
+
+grep br phrases2.txt | wc -l
+
+
+#Parte 8 - Conte o número de linhas que nao contem as letras br
+
+grep -v br phrases2.txt | wc -l
+ 
+
+#Parte 9 - Adicione dois nomes de países ao final do arquivo 
+
+
+cat >> phrases.txt
+
+Brasil
+Filipinas
+
+#(Ctrl + d)
+
+
+#Parte 10 - Crie um arquivo bunch_of_things.txt com os conteudos dos arquivos phrases2.txt e countries.txt
+
+cat phrases2.txt countries.txt > bunch_of_things.txt
+
+
+#Parte 11 - Ordene o arquivo bunch_of_things
+
+#Ordenar na tela 
+
+sort bunch_of_things
+
+#Ordenar o arquivo
+
+sort bunch_of_things > bunch_of_things_new.txt
+rm bunch_of_things
+mv bunch_of_things_new bunch_of_things
+
+
