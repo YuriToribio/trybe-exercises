@@ -1,0 +1,56 @@
+
+      h1 {
+        text-align: center;
+      }
+
+      .first {
+        background-color: rgb(235, 200, 84);
+        font-size: 20px;
+        height: 50px;
+        text-align: center;
+        width: 200px;
+        display: block;
+        margin-left: 525px;
+
+    
+      }
+
+      .second {
+        background-color: rgb(219, 219, 219);
+        font-size: 20px;
+        height: 50px;
+        text-align: center;
+        width: 300px;
+        display: inline-block;
+        margin-left: 330px;
+      }
+
+      .third {
+        background-color: rgb(170, 142, 106);
+        font-size: 20px;
+        height: 50px;
+        text-align: center;
+        width: 300px;
+        display: inline-block;
+      }
+
+     h3{
+        text-align: center;
+     }
+
+      li {
+        display: inline-block;
+      }
+
+    /*Só com o display: inline-block o texto dos li nao centralizaram, acabei fazendo essa gambiarra*/ 
+
+    #a {margin-left: 200px;
+    }
+
+    #b{ margin-left: 220px;
+    }
+
+    #c {margin-left: 220px;
+    }
+
+
