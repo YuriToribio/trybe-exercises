@@ -11,9 +11,9 @@
  -Crie uma classe para modificar a cor de fundo da tag p e da ul ao mesmo tempo.
 
 
+
+<br><br>
  -- Exercício 2 --
-
-
 
  -Modifique o font-family do h1 para sans-serif;
 
@@ -26,4 +26,10 @@
  -Explore as propriedades font-style, line-height, text-align e text-decoration;
 
  -Troque a cor de fundo de cada item da lista para a cor correspondente ao texto.
+
+
+<br><br>
+ --Exercício 3 ---
+
+  -Coloque todo o CSS da tag style em um arquivo externo. 
 

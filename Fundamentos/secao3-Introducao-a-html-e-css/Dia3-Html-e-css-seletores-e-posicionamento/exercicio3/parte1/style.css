@@ -1,0 +1,13 @@
+h1, p {
+    text-align: center;
+}
+
+li:hover, li:active{
+    background-color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: white;
+    list-style: none;
+}
+
+
