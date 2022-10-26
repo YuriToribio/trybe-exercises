@@ -190,3 +190,57 @@ console.log(lucroMilProdutos(10, 15));
 
 /////////////////////////////////////////////////////
 
+function salarioLiquido(salarioBruto){
+
+    let salarioFinal;
+    
+    function calculoInss(salarioBruto){
+
+        let inss;
+
+        if(salarioBruto<=1556.94){
+            inss = 0.08*salarioBruto;
+        }
+        else if(salarioBruto>=1556.95 && salarioBruto<=2594.92){
+            inss= 0.09*salarioBruto;
+        }
+        else if(salarioBruto>=2594.93 && salarioBruto<5189.82){
+            inss=0.11*salarioBruto;
+        }
+        else{
+            inss=570.88;
+        }
+        return inss;
+    }
+
+    function calculoImpostoDeRenda(salarioDeduzidoInss){
+
+        let impostoRenda;
+
+        if (salarioDeduzidoInss<=1903.98){
+            impostoRenda=0;
+        }
+        else if (salarioDeduzidoInss>=1903.99 && salarioDeduzidoInss<=2826.65){
+            impostoRenda= (0.075*salarioDeduzidoInss) - 142.8;
+        }
+        else if (salarioDeduzidoInss>=2594.93 && salarioDeduzidoInss<5189.82){
+            impostoRenda=(0.15*salarioDeduzidoInss) - 354.8;
+        }
+        else if (salarioDeduzidoInss>=3751.06 && salarioDeduzidoInss<=4664.68){
+            impostoRenda=(0.225*salarioDeduzidoInss)-636.13;
+        }
+        else{
+            impostoRenda= (0.275*salarioDeduzidoInss)- 839.36;
+        }
+        return impostoRenda;
+    }
+
+  
+    salarioFinal= salarioBruto - calculoInss(salarioBruto) - calculoImpostoDeRenda( salarioBruto - calculoInss (salarioBruto)  );
+    
+
+    return salarioFinal;
+
+}
+
+console.log(salarioLiquido(3000));
