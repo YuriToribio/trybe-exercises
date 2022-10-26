@@ -1,6 +1,5 @@
 
 let status = "aprovada";
-let statusCandidato ="?";
 
 switch(status){
     case 'aprovada':
