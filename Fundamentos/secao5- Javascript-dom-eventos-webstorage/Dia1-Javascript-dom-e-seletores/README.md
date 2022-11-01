@@ -14,3 +14,7 @@
 -- Exercício 3 -- 
 
     - Consolidar a manipulação dos elementos HTML, colocando a cor do Administrador de Tempo da Trybe como na imagem fornecida!
+
+-- Exercício 4 --
+
+    - Leia as instruções que estão dentro de um comentário na tag <script>. 
