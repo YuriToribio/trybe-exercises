@@ -10,3 +10,11 @@
     - Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
     - Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
     - Agora acesse o terceiroFilho a partir de pai.
+
+-- Exercício 2 --
+
+
+    - Crie um irmão para elementoOndeVoceEsta.
+    - Crie um filho para elementoOndeVoceEsta.
+    - Crie um filho para primeiroFilhoDoFilho.
+    - A partir desse filho criado, acesse terceiroFilho.
