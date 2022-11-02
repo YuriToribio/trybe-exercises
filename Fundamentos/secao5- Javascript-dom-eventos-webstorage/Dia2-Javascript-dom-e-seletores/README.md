@@ -18,3 +18,7 @@
     - Crie um filho para elementoOndeVoceEsta.
     - Crie um filho para primeiroFilhoDoFilho.
     - A partir desse filho criado, acesse terceiroFilho.
+
+-- Exercício 3 --
+
+    -  Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho. 
