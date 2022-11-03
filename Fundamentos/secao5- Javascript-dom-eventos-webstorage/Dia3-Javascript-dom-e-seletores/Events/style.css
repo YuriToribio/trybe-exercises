@@ -29,7 +29,7 @@
   
   #days li {
     color: #777;
-    display: inline-block;
+    display: inline-block; /*faz os dias da semana que serão adicionados dinâmicamente ficarem alinhados*/
     font-size:20px;
     margin: 5px 0;
     text-align: center;
@@ -142,7 +142,7 @@
   
   .week-days li {
     color: #666;
-    display: inline-block;
+    display: inline-block; /*para os dias da semana ficarem um do lado do outro*/
     text-align: center;
     vertical-align: middle;
     width: 13.6%;
