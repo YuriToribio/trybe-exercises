@@ -157,7 +157,7 @@ const novaDivDeTarefa= (cor) => {
   novaTarefa.style.backgroundColor=cor;
   containerDasTarefas.appendChild(novaTarefa);
 }
-novaDivDeTarefa('red');
+novaDivDeTarefa('green');
 
 // Cria uma função que seleciona uma tarefa
 
@@ -199,3 +199,44 @@ const marcaCalendário = () => {
   })
 }
 marcaCalendário();
+
+// Parte Bônus
+
+const AdicionaNovaTarefa = () => {
+
+    let capturaInput= document.querySelector('#task-input');
+    let capturaButaoAdd= document.querySelector('#btn-add');
+    let capturaContainerTaskList = document.querySelector('.task-list');
+
+
+    capturaInput.addEventListener('keyup', (evento) => {
+
+      if(evento.key === 'Enter' && capturaInput.value.length>0){
+
+        let novaTarefa = document.createElement('li');
+        novaTarefa.innerText= capturaInput.value;
+        capturaContainerTaskList.appendChild(novaTarefa);
+        capturaInput.value='';
+
+      }
+
+
+    })
+
+    capturaButaoAdd.addEventListener('click', () => {
+
+      if(capturaInput.ariaValueMax.length>0){    
+
+        let novaTarefa = document.createElement('li');
+        novaTarefa.innerText= capturaInput.value;
+        capturaContainerTaskList.appendChild(novaTarefa);
+        capturaInput.value='';
+
+      }
+      else { 
+        alert('Erro: Digite ao menos 1 caractere');
+      }
+    })
+}
+
+AdicionaNovaTarefa();
