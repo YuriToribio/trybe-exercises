@@ -9,7 +9,7 @@
     A terceira div não deverá aparecer se nossa tela possuir largura entre 650px e 950px.
 
     Sem alterar a classe trick, faça com que o texto dela apareça somente quando a tela estiver com menos de 500px de largura.
-
+    
 -- Exercício 2 --
 
 Criar uma página para uma tela pequena
@@ -52,7 +52,6 @@ Agora que você aprendeu como criar layouts específicos para diferentes tamanho
 
         Adicione a propriedade max-width à página, para garantir que a largura das linhas não fique muito grande.
         
-
 -- Exercício 3 --    
 
     Utilizando a abordagem mobile first e media queries, crie três versões de layout diferentes para essa página. Cada layout deve corresponder a um tamanho diferente de página (pequeno, médio e grande). Faça pelo menos um commit para cada layout;
@@ -90,8 +89,6 @@ Agora que você aprendeu como criar layouts específicos para diferentes tamanho
     Os itens dentro do elemento navigation devem aparecer cada um em sua própria linha;
 
     O elemento com id header deve ser fixo, de forma que ele fique aparecendo sempre no topo da tela, mesmo após a pessoa usuária rolar a página.
-
-
 
 
 
